@@ -1,0 +1,16 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: sdm-ibm-jp
+  host: sdm-ibm-jp
+  disk_quota: 1024M
+  services:
+  - sdm-ibm-jp-cloudantNoSQLDB
+  - dashDB-kt
+  - NLC-SDM
+  - availability-monitoring-auto
+  env:
+    NODE_RED_USERNAME: sdm-ibm-jp
+    NODE_RED_PASSWORD: sysmod
